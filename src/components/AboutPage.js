@@ -97,4 +97,6 @@ const AboutPage = () => {
   )
 }
 
+// "build": "react-scripts build",
+
 export default AboutPage
