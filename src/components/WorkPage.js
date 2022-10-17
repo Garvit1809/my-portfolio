@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { darkTheme, lightTheme } from './Themes'
+import { darkTheme } from './Themes'
 import styled, { ThemeProvider } from "styled-components";
 import { motion } from 'framer-motion';
 
