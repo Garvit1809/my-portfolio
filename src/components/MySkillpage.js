@@ -100,7 +100,7 @@ const MySkillpage = () => {
           </Description>
           <Description>
             <strong>Skills</strong>
-            <p>Html, Css, Js, Jquery, React, Material-ui etc.</p>
+            <p>Html, Css, Js, React, Loco-scroll, gsap, framer-motion etc.</p>
           </Description>
           <Description>
             <strong>Tools</strong>
@@ -117,7 +117,7 @@ const MySkillpage = () => {
           </Description>
           <Description>
             <strong>Skills</strong>
-            <p>Node.js, Express.js, MySQL, MongoDb, Mongoose, REST API etc.</p>
+            <p>Node.js, Express.js, MongoDb, Mongoose, REST API, Nest.js etc.</p>
           </Description>
           <Description>
             <strong>Tools</strong>

@@ -10,6 +10,7 @@ import { YinYang } from "./AIISvgs";
 import { keyframes } from "styled-components";
 import Intro from "./Intro";
 
+
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
   width: 100vw;
@@ -156,7 +157,7 @@ const Main = () => {
 
         <Contact
           target="_blank"
-          to={{ pathname: "mailto:garvitvarshne18@gmail.com" }}
+          to={{ pathname: "//mailto:garvitvarshne18@gmail.com" }}
         >
           <motion.h2
           initial={{
@@ -168,7 +169,8 @@ const Main = () => {
             transition: { type:'spring', duration: 1.5, delay:1}
           }}
           whileHover = {{scale: 1.1}}
-          whileTap = {{scale: 0.9}}>
+          whileTap = {{scale: 0.9}}
+          >
             Say hi...
           </motion.h2>
         </Contact>

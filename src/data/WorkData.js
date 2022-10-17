@@ -61,20 +61,34 @@ export const Work = [
     },
     {
         id:8,
-        name:"Memories",
-        description: "A full stack apllication built using MERN. IN PROGRESS😁😁😁😁",
-        tags:["react", "node", "express", "mongoDb"],
-        demo:"",
-        github:""
+        name:"Weirdoes",
+        description: "A NFT collector UI application built using React, styled components, gsap, react-use, reat-confetti etc.",
+        tags:["react", "styled-components", "gsap", "react-confetti"],
+        demo:"prismatic-naiad-f1dac2.netlify.app",
+        github:"github.com/Garvit1809/Weirdoes"
     },
     {
-        id:9,
-        name:"Weirdoes",
-        description: "A NFT collector UI application built using React, styled components, Framer Motion, React-spring etc. IN PROGRESS😁😁😁😁",
-        tags:["react", "styled-components", "framer-motion", "react-spring"],
-        demo:"",
-        github:""
+        id: 9,
+        name: 'EcoTogether',
+        description: 'EcoTogether is an application through which people can come together to clean Environment.',
+        tags: ['react','node','express','mongoDb','mongoose','styled-components'],
+        demo: 'devpost.com/software/ecotogether-krcuof',
+        github: 'github.com/Garvit1809/Eco'
+    },
+    {
+        id: 10,
+        name: 'Wibezz',
+        description: `A fashion agency's landing page with smooth animations`,
+        tags: ['react','gsap','framer-motion','locomotive-scroll','styled-components'],
+        demo: 'transcendent-tulumba-5617f9.netlify.app/',
+        github: 'github.com/Garvit1809/Wibe'
+    },
+    {
+        id: 11,
+        name: 'WorkedIn',
+        description: 'COMING SOON',
+        tags: ['react','typescript','node.js','express','mongodb','mongoose'],
+        demo: 'https://github.com/Garvit1809/WorkedIn',
+        github: 'https://github.com/Garvit1809/WorkedIn'
     }
-    
-  
 ] 
