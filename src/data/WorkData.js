@@ -88,7 +88,15 @@ export const Work = [
         name: 'WorkedIn',
         description: 'COMING SOON',
         tags: ['react','typescript','node.js','express','mongodb','mongoose'],
-        demo: 'https://github.com/Garvit1809/WorkedIn',
-        github: 'https://github.com/Garvit1809/WorkedIn'
+        demo: 'github.com/Garvit1809/WorkedIn',
+        github: 'github.com/Garvit1809/WorkedIn'
+    },
+    {
+        id: 12,
+        name: 'Stresser',
+        description: `Stresser stresses on reducing peoples's stress and anxiety by providing therapy, diet, diary and chat features`,
+        tags: ['react','javascript','node.js','express','mongodb','mongoose'],
+        demo: 'stresser-on.herokuapp.com/',
+        github: 'github.com/Garvit1809/Stresser'
     }
 ] 
