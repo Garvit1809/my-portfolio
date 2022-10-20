@@ -20,7 +20,7 @@ background-color: ${props => props.theme.body};
 background-color: black;
 /* background-color: lightblue; */
 /* width: 100vw; */
-height: 700vh;
+height: 800vh;
 position: relative;
 /* overflow: hidden; */
 display: flex;
