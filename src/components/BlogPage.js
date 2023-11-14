@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import img from '../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import {Blogs} from '../data/BlogData'
+import { Blogs } from '../data/BlogData'
 import BlogComponent from '../components/BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from '../subComponents/BigTitle'
@@ -46,8 +46,8 @@ grid-gap: calc(1rem + 2vw);
 `
 
 const container = {
-  hidden: {opacity: 0},
-  show:  {
+  hidden: { opacity: 0 },
+  show: {
     opacity: 1,
 
     transition: {
@@ -63,24 +63,24 @@ const BlogPage = () => {
 
   useEffect(() => {
 
-    let num = (window.innerHeight - 70)/30;
+    let num = (window.innerHeight - 70) / 30;
     setNumbers(parseInt(num));
   }, [])
-  
+
   return (
     <MainContainer
-    variants={container}
-    initial='hidden'
-    animate='show'
-    exit={{
-      opacity: 0, transition: {duration: 0.5}
-    }}
+      variants={container}
+      initial='hidden'
+      animate='show'
+      exit={{
+        opacity: 0, transition: { duration: 0.5 }
+      }}
     >
       <Container>
-        <LogoComponent/>
-        <PowerButton/>
-        <SocialIcons/>
-        <AnchorComponent numbers={numbers}/>
+        <LogoComponent />
+        <PowerButton />
+        <SocialIcons />
+        <AnchorComponent numbers={numbers} />
         <Center>
           <Grid>
             {
@@ -90,7 +90,7 @@ const BlogPage = () => {
             }
           </Grid>
         </Center>
-        <BigTitle text="BLOG" top="5rem" left="5rem" />
+        <BigTitle text="RESEARCH" top="5rem" left="5rem" />
       </Container>
     </MainContainer>
   )

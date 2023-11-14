@@ -11,6 +11,7 @@ import MySkillPage from "./components/MySkillpage";
 import SoundBar from "./subComponents/SoundBar";
 
 import { AnimatePresence } from "framer-motion";
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -21,14 +22,15 @@ function App() {
         <SoundBar />
 
         <AnimatePresence exitBeforeEnter>
-      
-            <Routes>
-              <Route exact path="/" element={<Main />} />
-              <Route exact path="/about" element={<AboutPage />} />
-              <Route exact path="/blog" element={<BlogPage />} />
-              <Route exact path="/work" element={<WorkPage />} />
-              <Route exact path="/skills" element={<MySkillPage />} />
-            </Routes>
+
+          <Routes>
+            <Route exact path="/" element={<Main />} />
+            <Route exact path="/about" element={<AboutPage />} />
+            <Route exact path="/experience" element={<Experience />} />
+            <Route exact path="/blog" element={<BlogPage />} />
+            <Route exact path="/work" element={<WorkPage />} />
+            <Route exact path="/skills" element={<MySkillPage />} />
+          </Routes>
         </AnimatePresence>
       </ThemeProvider>
     </>

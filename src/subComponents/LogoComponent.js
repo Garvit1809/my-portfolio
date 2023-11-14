@@ -15,10 +15,10 @@ z-index: 3;
 `
 const LogoComponent = (props) => {
   return (
-      <Logo color={props.theme}>
-          GV
-      </Logo>
-    )
+    <Logo color={props.theme}>
+      YPS
+    </Logo>
+  )
 }
 
 export default LogoComponent

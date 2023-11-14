@@ -59,11 +59,6 @@ padding: 0.5rem 0;
 const Tag = styled.span`
 padding-right: 0.5rem;
 `
-
-const Date = styled.span`
-padding: 0.5 rem 0;
-`
-
 const Item = {
   hidden: {
     scale: 0,
@@ -80,26 +75,27 @@ const Item = {
 const Container = styled(motion.div)``;
 
 const BlogComponent = (props) => {
-  const {name, tags, date, imgSrc, link} = props.blog;
+  const { name, tags, imgSrc, link } = props.blog;
   return (
     <Container
-    variants={Item}
+      variants={Item}
     >
-    <Box target="_blank" to={{pathname: link}}>
-    <Image img={imgSrc} />
-    <Title>{name}</Title>
-    <HashTags>
-    {
-          tags.map((t, id) => {
-            return <Tag key={id}>#{t}</Tag>
-          })
-        }
-      </HashTags>
-      <Date>
-      {date}
-      </Date>
+      <Box target="_blank" to={{ pathname: link }}>
+        <Image img={imgSrc} />
+        <Title>{name}</Title>
+        <HashTags>
+          {
+            tags.map((t, id) => {
+              return (
+                tags.length - 1 !== id ?
+                  <Tag key={id}>{t},</Tag>
+                  : <Tag key={id}>{t}</Tag>
+              )
+            })
+          }
+        </HashTags>
       </Box>
-      </Container>
+    </Container>
   )
 }
 

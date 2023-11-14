@@ -70,9 +70,9 @@ const AboutPage = () => {
 
     <ThemeProvider theme={darkTheme}>
       <Box>
-        <LogoComponent theme='dark'/>
+        <LogoComponent theme='dark' />
         <PowerButton />
-        <SocialIcons theme='dark'/>
+        <SocialIcons theme='dark' />
         <ParticleComponent theme='dark' />
 
         <Spaceman>
@@ -83,15 +83,14 @@ const AboutPage = () => {
   </Resume> */}
 
         <Main>
-        I'm a full-stack developer located in India. I love to create simple yet beautiful websites with great user experience and can operate both on front and back-end systems.
-        <br />
-        I love Singing 🎙🎶🎶 and been learning Indian Classical Music. Also I love to watch ANIME😚 more than movies and web series.        
-        <br/>
-        I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+          I am a passionate individual with a zeal for pushing boundaries with artificial intelligence. With a proven track record of integrating hardware with AI in impressive projects, I have authored five impactful research papers. My contributions extend to my role as a Mitacs research intern in Montreal, Canada where navigated the forefront of futuristic vehicle advancements.
+          <br />
+          <br />
+          Beyond the tech world, I find joy in the adrenaline-fueled realm of E-sports, which provides me with a distinctive fusion of innovation and competitive spirit. In this exhilarating arena, brilliance and curiosity converge in a compelling journey.
         </Main>
-        
+
         <BigTitle text="ABOUT" top="8%" left="5%" />
-        
+
       </Box>
     </ThemeProvider>
   )

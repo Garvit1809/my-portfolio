@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
-import Me from '../assets/Images/profile-img.png'
-import {motion} from 'framer-motion'
+import Me from '../assets/Images/myPic-removebg-preview.png'
+import { motion } from 'framer-motion'
 
 const Box = styled(motion.div)`
 
@@ -12,7 +12,7 @@ transform: translate(-50%, -50%);
 
 width: 55vw;
 // height: 50vh;
-displaty: flex;
+display: flex;
 
 
 // to create 2 color border :-
@@ -34,16 +34,19 @@ background: linear-gradient(
 
 const SubBox = styled.div`
 width: 50%;
-position: absolute;
+position: relative;
 display: flex;
 
 .pic{
-    position: relative;
-    left: 150%;
-    bottom: 30.5%;
-    transform: translate(-50%, 0%);
-    width: 100%;
-    height: auto;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    /* left: 50%; */
+    right: -15%;
+    transform: translate(-2px, -2px);
+    width: 450px;
+    height: 400px;
+    object-fit: contain;
 }
 `
 const Text = styled.div`
@@ -51,10 +54,12 @@ font-size: calc(1em + 1.5vw);
 color: ${props => props.theme.body};
 cursor: pointer;
 h1,h3{
-    padding: 1rem 0rem 0.5rem 2rem;}
+padding: 0rem 0rem 0rem 2rem;
+}
+
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: center;
 
 &>*:last-child{
     color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
@@ -64,30 +69,30 @@ justify-content: space-evenly;
 `
 
 const Intro = () => {
-  return (
-    <Box
-    initial = {{height: 0}}
-    animate= {{height: '48vh'}}
-    transition= {{type: 'spring', duration: 2, delay: 1}}
-    >
-        <SubBox>
-            <Text>
-                <h1>Hi👋</h1>
-                <h3>I'm Garvit</h3>
-                <h6>I code and design simple yet beautiful websites.</h6>
-            </Text>
-        </SubBox>
-        <SubBox>
-            <motion.div
-            initial = {{opacity: 0}}
-            animate= {{opacity: 1}}
-            transition= {{duration: 1, delay: 2}}
-            >
-            <img className="pic" src={Me} alt='Profile Pic' />
-            </motion.div>
-        </SubBox>
-    </Box>
-  )
+    return (
+        <Box
+            initial={{ height: 0 }}
+            animate={{ height: '48vh' }}
+            transition={{ type: 'spring', duration: 2, delay: 1 }}
+        >
+            <SubBox>
+                <Text>
+                    <h1>Hi👋</h1>
+                    <h3>I'm Yash</h3>
+                    <h6>Artificial Intelligence geek who converts caffeine into code.</h6>
+                </Text>
+            </SubBox>
+            <SubBox>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 2 }}
+                >
+                    <img className="pic" src={Me} alt='Profile Pic' />
+                </motion.div>
+            </SubBox>
+        </Box>
+    )
 }
 
 export default Intro

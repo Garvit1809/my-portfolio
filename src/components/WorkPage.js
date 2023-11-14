@@ -7,7 +7,7 @@ import LogoComponent from '../subComponents/LogoComponent';
 import PowerButton from '../subComponents/PowerButton';
 import SocialIcons from '../subComponents/SocialIcons';
 
-import { Work } from "../data/WorkData";
+import { Projects } from "../data/WorkData";
 import Card from '../subComponents/Card';
 import { YinYang } from './AIISvgs';
 import BigTitle from '../subComponents/BigTitle';
@@ -20,7 +20,7 @@ background-color: ${props => props.theme.body};
 background-color: black;
 /* background-color: lightblue; */
 /* width: 100vw; */
-height: 800vh;
+height: 400vh;
 position: relative;
 /* overflow: hidden; */
 display: flex;
@@ -48,8 +48,8 @@ z-index: 1;
 // Framer-motion config here
 
 const container = {
-  hidden: {opacity: 0},
-  show:  {
+  hidden: { opacity: 0 },
+  show: {
     opacity: 1,
 
     transition: {
@@ -80,29 +80,29 @@ const WorkPage = () => {
     window.addEventListener('scroll', rotate)
     return () => window.removeEventListener('scroll', rotate)
   }, [])
-  
-  
-  
+
+
+
 
   return (
 
     <ThemeProvider theme={darkTheme}>
       <Box>
-        <LogoComponent theme='dark'/>
+        <LogoComponent theme='dark' />
         <PowerButton />
-        <SocialIcons theme='dark'/>    
+        <SocialIcons theme='dark' />
         {/*<ParticleComponent theme='light' /> */}
 
         <Main ref={ref} variants={container} initial='hidden' animate='show'>
           {
-            Work.map( d =>
+            Projects.map(d =>
               <Card key={d.id} data={d} />
             )
           }
-        </Main> 
+        </Main>
         <Rotate ref={yingyang}>
-          <YinYang width={80} height={80} fill={darkTheme.text}/>
-        </Rotate>  
+          <YinYang width={80} height={80} fill={darkTheme.text} />
+        </Rotate>
         <BigTitle text="WORK" top="10%" right="20%" />
       </Box>
     </ThemeProvider>

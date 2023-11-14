@@ -1,86 +1,51 @@
-export const Work = [
+export const Projects = [
   {
     id: 1,
-    name: "Taxi Animation",
-    description: "A simple moving car animation using simple css",
-    tags: ["html", "css"],
-
-    demo: "garvit1809.github.io/Taxi-Animation/",
-    github: "github.com/Garvit1809/Taxi-Animation/tree/master",
+    name: "Vehicle Distance estimation using Monocular Cameras",
+    description: "The program uses YOLOv3 for precise object detection across 80 classes, counting cars, calculating distances, and capturing images of detected objects in a frame.",
+    tags: ["YOLOv3", "Image processing" , "Python", "OpenCV"],
+    github: "github.com/YashPratapS/Object-Detector",
   },
   {
     id: 2,
-    name: "Samurai_battle",
-    description: "A Javascript fighting game made using Html-Canvas",
-    tags: ["html canvas", "css", "javascript"],
+    name: "Bird Classifier",
+    description: "A Deep Learning based android app that can classify bird image to their scientific species name.",
+    tags: ["Deep Learning", "Image Processing", "Android Development"],
 
-    demo: "garvit1809.github.io/Samurai-Battle/",
-    github: "github.com/Garvit1809/Samurai-Battle",
+    github: "github.com/YashPratapS/Bird-Classifier",
   },
   {
     id: 3,
-    name: "Stresser",
-    description: `Stresser stresses on reducing peoples's stress and anxiety by providing therapy, diet, diary and chat features`,
-    tags: ["react", "javascript", "node.js", "express", "mongodb", "mongoose"],
-    demo: "github.com/Garvit1809/Stresser",
-    github: "github.com/Garvit1809/Stresser",
+    name: "YOLO Drowsiness Detector",
+    description:"The program employs a Deep Learning model for real-time drowsiness detection, outperforming a Python/OpenCV alternative in both speed and accuracy.",
+    tags: ["OpenCV", "Deep Learning","Python", "Computer Vision"],
+    
+    github: "github.com/YashPratapS/Human-Drowsiness-Project",
   },
   {
     id: 4,
-    name: "Wibezz",
-    description: `A fashion agency's landing page with smooth animations`,
-    tags: [
-      "react",
-      "gsap",
-      "framer-motion",
-      "locomotive-scroll",
-      "styled-components",
-    ],
-    demo: "transcendent-tulumba-5617f9.netlify.app/",
-    github: "github.com/Garvit1809/Wibe",
+    name: "Volume Controller",
+    description: `A computer vision based volume controller to control the volume of pc using hand gestures is made.`,
+    tags: ["Python","Image Processing", "OpenCV", "Computer Vision"],
+   
+    github: "github.com/YashPratapS/Volume-Controller",
   },
   {
     id: 5,
-    name: "Weirdoes",
-    description:
-      "A NFT collector UI application built using React, styled components, gsap, react-use, reat-confetti etc.",
-    tags: ["react", "styled-components", "gsap", "react-confetti"],
-    demo: "prismatic-naiad-f1dac2.netlify.app",
-    github: "github.com/Garvit1809/Weirdoes",
+    name: "Autonomous Lane Detection Vehicle",
+    description:"The project aims to create design and develop an autonomous car that can be remotely controlled while also having the ability to detect and avoid obstacles by utilizing Raspberry Pi and Open CV technology.",
+    tags: ["OpenCV", "Computer Vision","Python", "Embedded Hardware"],
+    
+    github: "github.com/YashPratapS/Autonomous-Lane-Detection-Vehicle",
   },
   {
     id: 6,
-    name: "Menlo",
-    description: `Built the frontend of our MVP `,
-    tags: ["react", "javascript", "node.js", "express", "mongodb", "mongoose"],
-    demo: "cool-froyo-53e4c9.netlify.app/",
-    github: "cool-froyo-53e4c9.netlify.app/",
+    name: "Dual Axis Solar Tracker and Voltage Estimator",
+    description: `The project aims to design a dual-axis solar tracker employing an Arduino UNO microcontroller.`,
+    tags: ["Arduino", "Embedded Hardware", "Arduino IDE"],
+    
+    github: "github.com/YashPratapS/Dual-Axis-Solar-Tracker-and-Voltage-Estimator/tree/main",
   },
-  {
-    id: 7,
-    name: "WorkedIn",
-    description:
-      "An application through which you can collab with folks with good work ethics",
-    tags: ["react", "typescript", "node.js", "express", "mongodb", "mongoose"],
-    demo: "github.com/Garvit1809/WorkedIn",
-    github: "github.com/Garvit1809/WorkedIn",
-  },
-  {
-    id: 8,
-    name: "Gumroad",
-    description:
-      "A fun project built in 4 days after getting exhausted from exams",
-    tags: ["react", "javascript", "styled-components"],
-    demo: "garvits-gumroad.netlify.app",
-    github: "github.com/Garvit1809/Gumroad",
-  },
-  {
-    id: 9,
-    name: "Teach And Learn",
-    description:
-      "An ed-tech platform where students can teach and learn from each other.",
-    tags: ["react", "typescript", "node.js", "express", "mongodb", "mongoose"],
-    demo: "teachandlearn.app/",
-    github: "github.com/Garvit1809/teachnlearn",
-  },
+
+
 ];

@@ -2,7 +2,6 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import styled from "styled-components";
-import { Develope } from "../components/AIISvgs";
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
@@ -12,20 +11,21 @@ import BigTitle from "../subComponents/BigTitle";
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 6rem;
 `;
 
 const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
-  background-color: ${(props) => props.theme.body};
+  /* background-color: ${(props) => props.theme.body}; */
   padding: 2rem;
   width: 30vw;
-  height: 60vh;
+  /* height: 60vh; */
   z-index: 3;
   line-height: 1.5;
   font-family: "Ubuntu Mono", monospace;
@@ -41,23 +41,6 @@ const Main = styled.div`
   }
 `;
 
-const Title = styled.h2`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: calc(1em + 1vw);
-
-  ${Main}:hover & {
-    & > * {
-      fill: ${(props) => props.theme.body};
-    }
-  }
-
-  & > *:first-child {
-    margin-right: 1rem;
-  }
-`;
-
 const Description = styled.div`
   color: ${(props) => props.theme.text};
   font-size: calc(0.6em + 1vw);
@@ -70,6 +53,7 @@ const Description = styled.div`
 
   p {
     padding-left: 1rem;
+    line-height: 1.4;
   }
   ul {
     padding-left: 2rem;
@@ -90,40 +74,42 @@ const MySkillpage = () => {
         <ParticleComponent theme="light" />
 
         <Main>
-          <Title>
-            <Develope width={40} height={40} /> Front-end Developer
-          </Title>
           <Description>
-            I value business or brand for which i'm creating, thus i enjoy
-            bringing new ideas to life.
+            <strong>Programming languages</strong>
+            <p>Python, C++, MATLAB, 8085 Programming, LATEX</p>
           </Description>
           <Description>
-            <strong>Skills</strong>
-            <p>Html, Css, Js, React, Loco-scroll, gsap, framer-motion etc.</p>
+            <strong>Data</strong>
+            <p>Data Collection, Feature Extraction, Analysis & Interpretation</p>
           </Description>
           <Description>
-            <strong>Tools</strong>
-            <p>VScode, Github etc.</p>
+            <strong>IOT</strong>
+            <p>Raspberry Pi, FMCW Radar, FPGA, Arduino</p>
+          </Description>
+          <Description>
+            <strong>Softwares</strong>
+            <p>VS Code, Colab, Jupyter, Arduino IDE</p>
           </Description>
         </Main>
 
         <Main>
-          <Title>
-            <Develope width={40} height={40} /> Back-end Developer
-          </Title>
           <Description>
-            I provide valuable backend software solutions and can work with
-            databases and API's
-          </Description>
-          <Description>
-            <strong>Skills</strong>
+            <strong>Machine Learning</strong>
             <p>
-              Node.js, Express.js, MongoDb, Mongoose, REST API, Nest.js etc.
+              SVM, MLP, Binary Tree, Regression models & other models
             </p>
           </Description>
           <Description>
-            <strong>Tools</strong>
-            <p>VScode, Github etc.</p>
+            <strong>Deep Learning</strong>
+            <p>DNN, CNN, Bi-LSTM, YOLO, Open CV& other DL model.</p>
+          </Description>
+          <Description>
+            <strong>Libraries </strong>
+            <p>NumPy, TensorFlow, Pandas, Seaborn, Scikit-Learn</p>
+          </Description>
+          <Description>
+            <strong>Soft Skills</strong>
+            <p>Dedicated & Passionate, Excellent Communicator, Team Worker, Writing</p>
           </Description>
         </Main>
       </Box>
